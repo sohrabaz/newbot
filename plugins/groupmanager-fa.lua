@@ -281,7 +281,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been_ *promoted*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_._ "..user_name.." *"..data.id_.."* *شدی آقاییییییییییییم, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_._ "..user_name.." *"..data.id_.."* _شدی آقاییییم", 0, "md")
    end
 end
 tdcli_function ({
