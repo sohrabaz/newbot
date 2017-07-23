@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 123456789 -- put Your ID here! <===
+local SUDO = 234545905 -- put Your ID here! <===
 local function index_function(user_id)
   for k,v in pairs(_config.admins) do
     if user_id == v[1] then
@@ -57,7 +57,7 @@ local sudo_users = _config.sudo_users
   if not lang then
  text = '*List of bot admins :*\n'
    else
- text = "_لیست ادمین های ربات :_\n"
+ text = "_لیست آقا هام  :_\n"
   end
 		  	local compare = text
 		  	local i = 1
@@ -69,7 +69,7 @@ local sudo_users = _config.sudo_users
    if not lang then
 		  		text = '_No_ *admins* _available_'
       else
-		  		text = '_ادمینی برای ربات تعیین نشده_'
+		  		text = '_آقایی ندارم من الان_'
            end
 		  	end
 		  	return text
@@ -100,7 +100,7 @@ if is_admin1(tonumber(data.id_)) then
      if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been promoted as_ *admin*", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _به مقام ادمین ربات منتصب شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_._ "..user_name.." *"..data.id_.."* _آخ جون آقاییییم شددددی_", 0, "md")
    end
 end
 tdcli_function ({
@@ -130,7 +130,7 @@ if not is_admin1(data.id_) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been demoted from_ *admin*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از مقام ادمین ربات برکنار شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _دیگه آقام نیستی برو گمشو_", 0, "md")
    end
 end
 tdcli_function ({
@@ -151,7 +151,7 @@ if already_sudo(tonumber(data.id_)) then
   if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already a_ *sudoer*", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل سودو ربات بود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل تاج سرم بوده_", 0, "md")
       end
    end
           table.insert(_config.sudo_users, tonumber(data.id_))
