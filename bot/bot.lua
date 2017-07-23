@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 123456789 -- Put Here Your Bot ID
+our_id = 234545905 -- Put Here Your Bot ID
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -94,19 +94,19 @@ function create_config( )
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》permag.ir v3
+    info_text = [[》crazy_dev v1
 
 🔰Our channel :
-》@permag_bots《
+》@《
 
 🔰Our channel2 :
-》@permag_ir《
+》@
 
 🔰Our channel3 :
-》@permag《
+》@
 
 🔰Our website :
-》http://permag.ir
+》http://payhost.ir
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -498,7 +498,7 @@ local lang = redis:get(hash)
   if not lang then
     return '_Group is not added_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return 'هه خوبه من اضافه شدم حالا ببینم کی میتونه از جاش تکون بخوره'
    end
   end
   -- determine if table is empty
@@ -506,13 +506,13 @@ else
      if not lang then
 					return "_No_ *banned* _users in this group_"
    else
-					return "*هیچ کاربری از این گروه محروم نشده*"
+					return "*تاحالا هیچکسو محروم نکردم *"
               end
 				end
        if not lang then
    message = '*List of banned users :*\n'
          else
-   message = '_لیست کاربران محروم شده از گروه :_\n'
+   message = '_اینا کسایی هستن که شوتشون کردم بیرون :_\n'
      end
   for k,v in pairs(data[tostring(chat_id)]['banned']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
@@ -538,13 +538,13 @@ else
         if not lang then
 					return "_No_ *silent* _users in this group_"
    else
-					return "*لیست کاربران سایلنت شده خالی است*"
+					return "*اینا کسایی هستن که به دستور خودت دهنشونو بستم*"
              end
 				end
       if not lang then
    message = '*List of silent users :*\n'
        else
-   message = '_لیست کاربران سایلنت شده :_\n'
+   message = '_اینا کسایی هستن که به دستور خودت دهنشونو بستم:_\n'
     end
   for k,v in pairs(data[tostring(chat_id)]['is_silent_users']) do
     message = message ..i.. '- '..v..' [' ..k.. '] \n'
@@ -611,7 +611,7 @@ else
       if not lang then
        filterlist = '*List of filtered words :*\n'
          else
-       filterlist = '_لیست کلمات فیلتر شده :_\n'
+       filterlist = '_لیست کلماتی که کسی نمیتونه بگه :_\n'
     end
  local i = 1
    for k,v in pairs(data[tostring(msg.chat_id_)]['filterlist']) do
